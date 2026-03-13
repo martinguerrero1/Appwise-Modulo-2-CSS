@@ -36,21 +36,34 @@ body {
 
 /* 1. El Contenedor de la Galería */
 .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: repeat(auto-fit,200px);
+  gap: 20px;
 }
 
 /* 2. Las Imágenes */
 .item img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item {
+  transition: transform 0.3s ease;
 }
 
 .item:hover img {
-}
+  transform: scale(1.1);
+} 
 
 /* 3. Destacando Fotos (Rompiendo la Grilla) */
 .destacado-h {
+  grid-column: 2 span;
+  height: 200px;
 }
 
 .destacado-v {
+  grid-row: 2 span;
 }
