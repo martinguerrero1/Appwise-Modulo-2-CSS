@@ -56,7 +56,7 @@ body {
 
 .item:hover img {
   transform: scale(1.1);
-}
+} 
 
 /* 3. Destacando Fotos (Rompiendo la Grilla) */
 .destacado-h {
