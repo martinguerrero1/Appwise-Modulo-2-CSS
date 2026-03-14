@@ -1,0 +1,121 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #121212;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+/* --------------------------------
+ASIDE NAVBAR
+----------------------------- */
+
+aside{
+    background-color: #030303;
+    height: 100vh;
+}
+
+.titulo-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.ref-navbar{
+    margin: 10px;
+}
+
+.listas-navbar{
+    margin: 10px;
+}
+
+.listas-navbar li{
+    margin: 5px;
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+/* --------------------------------
+MAIN
+----------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10vh;
+}
+
+/* ------
+NAV MAIN
+---------- */
+nav{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.flechas{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+svg{
+    display: flex;
+    margin: 0 5px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.btn-premium{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-premium h4{
+    color: rgb(46, 46, 46);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------
+INICIO MAIN
+---------- */
+
+
+/* --------------------------------
+FOOTER
+----------------------------- */
