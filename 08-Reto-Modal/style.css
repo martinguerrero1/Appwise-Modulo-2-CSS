@@ -81,12 +81,22 @@ body {
 
 /* 1. La Capa Oscura (Fixed) */
 .modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121c9;
 }
 
 /* 2. Centrado de la Caja Blanca (Absolute) + Ancla (Relative) */
 .modal-box {
+  position: relative;
 }
 
 /* 3. El Botón de Cierre (Absolute) */
 .btn-cerrar {
+  position: absolute;
+  top: 0px;
+  right: 8px;
 }
