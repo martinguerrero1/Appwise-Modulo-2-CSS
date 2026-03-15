@@ -3,7 +3,6 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,7 +24,8 @@ ASIDE NAVBAR
 
 aside{
     background-color: #030303;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
 }
 
 .titulo-navbar{
@@ -115,7 +115,30 @@ svg{
 INICIO MAIN
 ---------- */
 
+.inicio{
+    width: 90%;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}
 
-/* --------------------------------
-FOOTER
------------------------------ */
+.contenedor-playlists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit,1fr);
+    justify-items: center;
+    gap: 10px;
+}
+
+.playlists{
+    gap: 10px;
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #393939;
+    box-shadow: 0px 0px 20px rgba(102, 102, 102, 0.138);
+    border: #e5e5e507 3px solid;
+}
